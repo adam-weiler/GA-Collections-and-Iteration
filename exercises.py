@@ -80,3 +80,14 @@ family_ages = [age + 1 for age in family_ages]
 print(family_ages) # [65, 64, 39, 38, 33, 31, 1]
 
 fav_colours.extend(['Cobalt', 'Silver']) #Adds Cobalt and Silver to the end of the list.
+
+
+#Exercise 6
+print('\nExercise #6')
+
+more_movies = { 'Blank Panther':2018, 'Thor':2011, 'Captain Marvel':2019, 'Harry Potter and the Philosopher\'s Stone':2001, 'Split':2016, 'The Avengers':2012, 'Shazam!':2019, 'Logan':2017, 'Big Hero 6':2014 } #Creates a new dictionary with movie names and years.
+
+phone_buttons = [ [1, 2, 3], [4, 5, 6], ['*', 0, '#']] #Creates a nested list that contains phone buttons.
+
+countries = [ {'name':'Canada', 'continent':'North America', 'island':'no'}, {'name':'Ireland', 'continent':'Europe ', 'island':'yes'}, {'name':'Austrailia', 'continent':'Austrailia', 'island':'yes'} #Creates a nested list that contains dictionaries about 3 different countries.
+]
