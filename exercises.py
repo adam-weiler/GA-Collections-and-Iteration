@@ -89,5 +89,36 @@ more_movies = { 'Blank Panther':2018, 'Thor':2011, 'Captain Marvel':2019, 'Harry
 
 phone_buttons = [ [1, 2, 3], [4, 5, 6], ['*', 0, '#']] #Creates a nested list that contains phone buttons.
 
-countries = [ {'name':'Canada', 'continent':'North America', 'island':'no'}, {'name':'Ireland', 'continent':'Europe ', 'island':'yes'}, {'name':'Austrailia', 'continent':'Austrailia', 'island':'yes'} #Creates a nested list that contains dictionaries about 3 different countries.
+countries = [ {'name':'Canada', 'continent':'North America', 'island':'no'}, {'name':'Ireland', 'continent':'Europe ', 'island':'yes'}, {'name':'Belgium', 'continent':'Europe', 'island':'no'} #Creates a nested list that contains dictionaries about 3 different countries.
 ]
+
+
+#Exercise 7
+print('\nExercise #7')
+
+skateboard_list = []
+for i in range(0, 20): #Runs 20 times.
+    skateboard_list.append('I will not skateboard in the halls') #Appends the message to the list.
+    print(skateboard_list[i]) #Prints the new message.
+
+one_to_fifty = list(range(2, 50)) #Creates a list of numbers between 1 to 50.
+print(one_to_fifty)
+
+sum = 0
+for num in one_to_fifty: #Runs each item in the one_to_fifty list.
+    sum += num #Adds each number in the list.
+print(sum) # 1224
+
+new_list = []
+for num in range(1, 51): #Runs from 1 to 50.
+    for i in range(3): #Runs 3 times.
+        new_list.append(num) #Appends the current num to the new_list. Each number appended three times.
+print(new_list) # [1, 1, 1, 2, 2, 2, 3, 3, 3, ... , 50, 50, 50]
+
+new_countries = []
+for country in countries: #Runs through each country in the countries list.
+    if (country['island'] == "no"): #Checks if current country is not an island.
+        new_countries.append(country) #Appends to the new_countries list.
+print(countries) #Prints the original list: Canada, Ireland, Belgium.
+print(new_countries) #Prints the new list: Canada, Belgium.
+#As a bonus, try with a filter
