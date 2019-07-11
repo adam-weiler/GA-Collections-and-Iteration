@@ -284,3 +284,37 @@ def fizz_buzz():
             print(num)
 
 fizz_buzz()
+
+
+#Exercise 12
+print('\nExercise #12')
+
+def get_pizzas(): #Ask user how many pizzas they would like to order.
+    print('How many pizzas do you want to order?')
+    return int(input())
+
+def get_toppings(order_number): #Asks user how many toppings they want on this order.
+    print(f'How many toppings for pizza {order_number}?')
+    return int(input())
+
+def display_orders(toppings): #Displays a list of order_number with each toppings.
+    if toppings: #If toppings exist, there is at least 1 order.
+        print('Heres your order!')
+        
+        for num in range(1, len(toppings)+1): #Loops through each order in the toppings array.
+            print(f'Pizza #{num} - {toppings[num-1]} toppings') #Prints order_number and toppings.
+
+    else: #Else toppings does not exist, and there are 0 orders.
+        print('What, you don\'t like pizza?')
+
+def order_pizza(): #Asks user how many pizzas they want, how many toppings on each pizza, and displays the order.
+    print('**PizzaMaker : We make your pizza and we make it hot!**')
+    pizzas_num = get_pizzas()
+
+    toppings = []
+    for num in range(1, pizzas_num+1): #Loops through the number of pizzas ordered.
+        toppings.append(get_toppings(num)) #Appends the toppings to the current iteration.
+
+    display_orders(toppings) #Displays the order.
+
+order_pizza() #Starts the pizza-ordering process.
