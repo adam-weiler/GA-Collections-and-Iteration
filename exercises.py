@@ -19,15 +19,27 @@ print (coin_flips) # ['heads', 'tails', 'heads', 'heads', 'tails']
 print (fav_colours[0]) # blue
 print (family_ages) # [32, 38, 37, 30, 64, 63]
 family_ages.append(0) #Adds 0 to end of family_ages.
-print (fav_movies['Predestination']) #2014
+print (fav_movies['Predestination']) # 2014
 
 
 #Exercise 2
 print('\nExercise #2')
-print (fav_colours[-1]) #orange
+print (fav_colours[-1]) # orange
 pop_cities['San Francisco'] = 884400
-coin_flips.reverse()
-print(pop_cities['Toronto']) #2930000
+coin_flips.reverse() #Reverses the order of the list.
+print(pop_cities['Toronto']) # 2930000
 
 for artist in fav_artists:
     print(f'I think that {artist} is awesome!') #Prints five times; once for each artist.
+
+
+#Exercise 3
+print('\nExercise #3')
+print(fav_artists[0:2]) # ['Nightwish', 'Pink Floyd']
+
+for movie, year in fav_movies.items():
+    print(f'\'{movie}\' came out in {year}.') #Prints three times; once for each movie.
+
+family_ages.sort(reverse = True) #Sorts from smallest to biggest, then reverses the order.
+
+fav_movies['Beauty and the Beast'] = [1991, 2017] #Adds to the end of the dictionary.
