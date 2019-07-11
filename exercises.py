@@ -1,3 +1,4 @@
+#Part 1:
 #Exercise 0
 
 #Q1: Lists
@@ -181,6 +182,7 @@ print(sum_of_list(my_expenses)) #5259.45
 print(sum_of_list([250, 7.95, 30.95, 16.50])) # 305.4
 
 
+#Part 2:
 #Exercise 9
 print('\nExercise #9')
 
@@ -264,3 +266,21 @@ for cohort, num in students.items(): #Runs through each item in the dictionary.
     numb_students += num #Adds all cohort numbers together.
 
 print(numb_students) # 106
+
+
+#Part 3:
+#Exercise 11
+print('\nExercise #11')
+
+def fizz_buzz():
+    for num in range(1, 101): #Loops through numbers 1 to 100.
+        if (num % 3 == 0) and (num % 5 == 0): #If current number is divisible by 3 and divisible by 5.
+            print('BitMaker')
+        elif (num % 3 == 0): #If current number is divisible by 3.
+            print('Bit')
+        elif (num % 5 == 0): #If current number is divisible by 5.
+            print('Maker')
+        else: #Else print current number.
+            print(num)
+
+fizz_buzz()
