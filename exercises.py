@@ -219,3 +219,48 @@ display_list(grocery_list) #Ditto.
 #Q6:
 grocery_list.pop(9) # Removes 'ginger candy' from the list.
 display_list(grocery_list) #Ditto.
+
+
+#Exercise 10
+print('\nExercise #10')
+
+#Q1:
+students = { #Creates a new dictionary.
+    'cohort1': 34,
+    'cohort2': 42,
+    'cohort3': 22
+}
+
+#Q2:
+def display_students(students): #Displays each cohort name and number of students.
+    for cohort, num in students.items(): #Runs through each item in the dictionary.
+        print(f'{cohort}: {num} students')
+    print('')
+
+display_students(students)
+
+#Q3:
+students['cohort4'] = 43 #Adds a new cohort to the dictionary.
+
+#Q4:
+print(students.keys()) #Outputs all keys in dictionary.
+
+#Q5:
+import math #Imports math for rounding up.
+
+for cohort, num in students.items(): #Runs through each item in the dictionary.
+    students[cohort] = num + math.ceil(num * .05) #Adds 5% to each number in each cohort.
+
+display_students(students) #Displays all names and numbers in the students dictionary.
+
+#Q6:
+del students['cohort2'] #Deletes the second cohort.
+display_students(students) #Ditto.
+
+#Q7:
+numb_students = 0
+
+for cohort, num in students.items(): #Runs through each item in the dictionary.
+    numb_students += num #Adds all cohort numbers together.
+
+print(numb_students) # 106
