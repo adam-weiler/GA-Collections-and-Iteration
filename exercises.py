@@ -159,7 +159,7 @@ print(new_list) # [1, 1, 1, 2, 2, 2, 3, 3, 3, ... , 50, 50, 50]
 #Q6:
 new_countries = []
 for country in countries: #Runs through each country in the countries list.
-    if (country['island'] == "no"): #Checks if current country is not an island.
+    if (country['island'] == 'no'): #Checks if current country is not an island.
         new_countries.append(country) #Appends to the new_countries list.
 print(countries) #Prints the original list: Canada, Ireland, Belgium.
 print(new_countries) #Prints the new list: Canada, Belgium.
@@ -179,3 +179,43 @@ my_expenses = [5000, 45, 85, 30.95, 16.50, 82]
 
 print(sum_of_list(my_expenses)) #5259.45
 print(sum_of_list([250, 7.95, 30.95, 16.50])) # 305.4
+
+
+#Exercise 9
+print('\nExercise #9')
+
+#Q0:
+grocery_list = ['peppers', 'jalapeño peppers', 'mushrooms', 'celery', 'carrots', 'brocoli', 'apples', 'bananas', 'almonds', 'yogurt', 'salsa', 'coffee', 'chocolate', 'ginger candy', 'taco chips', 'soda', 'pizza', 'frozen burritos']
+
+#Q1B:
+def display_list(input_list): #Prints out all items in the list.
+    for item in input_list: #Runs through each item in the list.
+        print(f'* {item}')
+    print('')
+
+#Q1A:
+display_list(grocery_list) #Displays all items in the grocery list.
+
+#Q1B:
+grocery_list.append('rice') #Adds rice to the end of the list.
+display_list(grocery_list) #Ditto.
+
+#Q2:
+print(len(grocery_list)) # 19
+
+#Q3:
+if ('bananas' in grocery_list): #Checks if there are bananas on the grocery_list.
+    print('We have no bananas today; don\'t forget to pick up some!')
+else: #Else bananas are not on the list.
+    print('You don\'t need to pick up bananas today.')
+
+#Q4:
+print(grocery_list[1]) # jalapeño peppers
+
+#Q5:
+grocery_list.sort() # Sorts the list alphabetically.
+display_list(grocery_list) #Ditto.
+
+#Q6:
+grocery_list.pop(9) # Removes 'ginger candy' from the list.
+display_list(grocery_list) #Ditto.
